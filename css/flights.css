@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Main Style */
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(19, 18, 18);
+    color: steelblue;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+h1{
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+
+span{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    
+}
+
+img{
+    width: 50%;
+}
+
+/* Navigation Bar */
+.navbar{
+    text-align: center;
+    margin: 0;
+}
+.navbar ul{
+    
+    list-style: none;
+}
+
+.navbar li{
+    
+    padding: 0.3em;
+}
+
+.navbar a{
+    margin: 0;
+    padding:0.3em;
+    text-decoration: none;
+    color: whitesmoke;  
+}
+
+.navbar a:hover{
+    background: steelblue;
+    border-radius: 5px;
+    font-weight: bold;
+    padding-top: 0;
+}
+
+/* Main Header*/
+
+.main-header{
+    text-align: center;
+    height: 300px;
+    margin: 0 auto;
+    background: rgb(41, 39, 39);
+    padding: 2em 0em;
+    height: 100%;
+}
+
+.main-header img{
+    width: 55%;
+    border-radius: 50%;
+}
+
+/*Primary Content */
+
+.container{
+    text-align: center;
+}
+
+.container img{
+    width: 60%;
+}
+
+.container p{
+    padding: 1em;
+}
+
+
+
+/* Footer */
+.main-footer{
+    text-align: center;
+    border-top: steelblue 2px dashed;
+}
+
+/*Media Query */
+
+@media(min-width:728px){
+    /*Main Styles */
+
+
+    /*Navigation Bar */
+    .navbar{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar li{
+        float: left;
+        padding-right: 1.5em;
+        padding-bottom: 0.8em;
+    }
+
+    .navbar ul{ 
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Main Header*/
+    .main-header img{
+        width: 20%;
+        max-width: 1080px;
+    }
+
+    .main-header h1{
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .main-header span{
+        font-style: italic;
+        font-size: 2em;
+        
+    }
+
+    /* Main Content */
+    
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        
+       
+    }
+
+    .col{
+        float: left;
+    }
+
+   .primary-content img{
+       width: 77%;
+   }
+
+   .tertiary-content img{
+       width: 90%;
+   }
+
+    .primary-content, .tertiary-content{
+        width: 30%;
+    }
+
+    .secondary-content{
+        width: 40%;
+    }
+
+    /* Clear Fix */
+
+    .container, .navbar::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

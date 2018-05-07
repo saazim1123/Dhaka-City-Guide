@@ -1,0 +1,289 @@
+/*Universal Selector */
+*{
+    box-sizing: border-box;
+}
+
+/* Main Styles */
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: normal;
+    background: rgb(19, 18, 18);
+    color: whitesmoke;
+   
+
+}
+
+h1{
+    font-size: 2em; /*64 px */
+    margin: 0;
+   
+}
+
+h2{
+    font-size: 1em;
+    margin-top: 0;
+    padding-top: 1em;
+}
+
+h4{
+    margin-top: 0;
+}
+
+span{
+    font: 1em;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+.call-out{
+    border: 2px solid white;
+    padding: 0.25em 0.3em 0.45em 0.3em;
+    border-radius: 15px;
+    color: white;
+    background: dimgray;
+    text-decoration: none;
+}
+
+.call-out:hover{
+    background:steelblue;
+    color: black;
+}
+
+
+
+img{
+    width: 80%;
+    max-width: 560px;
+}
+
+/* Navigation Bar */
+.navbar{
+    background: rgb(95, 95, 95);
+    text-align: center;
+    padding: 1em 0;
+    
+    
+    
+}
+
+.navbar ul{
+    line-height: 1.3em;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    
+    
+}
+
+.navbar li{
+    padding: 0.3em;
+    
+}
+
+.navbar a{
+    
+    text-decoration: none;
+    color: white;
+    display: inline;
+    
+    
+}
+
+.navbar a:hover{
+    color: steelblue;
+    border-bottom: 2px solid steelblue;
+}
+
+/* Main Header */
+.main-header{
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-bottom: 2em;
+    
+    
+}
+
+.main-header h1{
+    vertical-align: center;
+    line-height: 40px;
+}
+
+
+/* Primary Content */
+
+.intro{
+    
+    padding-bottom: 1.1em;
+    margin-top: 0;
+}
+
+
+
+.get-there{
+    
+    margin: 0 0.5em 0 0.5em;
+    padding:0 1.1em 1.1em 1.1em;
+   
+}
+.get-there h2{
+    padding-top: 0;
+}
+
+
+/* Secondary Content */
+.visit{
+    background: url('../images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 238, 238);
+    padding-bottom: 1.1em;
+}
+
+.visit p a{
+    
+    color: tomato;
+}
+
+.stay img{
+    width: 80%;
+}
+
+.stay{
+    margin-bottom: 1.1em;
+}
+
+/* Footer */
+.main-footer{
+    line-height: 1em;
+    padding-top: 0.5em;
+    border-top: 2px solid #ccc;
+    background: rgb(95, 95, 95);
+    color: white;
+    padding-bottom:0.5em;
+}
+
+/* Media Queries */ 
+
+@media(min-width:700px){
+    
+    /* Main Styles */
+    h2{
+        font-size: 2.2rem;
+        
+    }
+    p{
+        font-size: 1.1rem;
+    }
+
+    .call-out{
+        display: inline-block;
+        margin-bottom: 0.5em;
+    }
+
+
+    /*Navbar*/
+    
+    .navbar ul{
+        padding-left: 1em;
+    }
+    .navbar{
+        font-size: 1.1rem;
+        margin: 0;
+        padding-bottom: 2em;
+    }
+
+    .navbar li{
+        float: left;
+     }
+ 
+     .navbar a{
+         margin-right: 2em;
+         background: none;
+         
+     }
+
+     /*Header*/
+    .main-header{
+        min-height: 600px;
+        text-shadow: 5px 8px 1px #222;
+        line-height: 5rem;
+    }
+
+    .main-header h1{
+        font-size:  7rem;
+        padding-top: 12rem;
+        padding-bottom: 4rem;
+        line-height: 8rem;
+        
+        
+    }
+
+    .main-header span{
+        font-size: 4rem;
+        font-weight: bolder;
+    }
+
+    /* Primary Content*/
+    
+    .intro{
+        width: 45.5%;
+        float: left;
+    }
+    .intro h2{
+        padding-top: 2rem;
+
+    }
+
+
+    .get-there{
+        width: 45.5%;
+        float: right;
+    }
+
+    .get-there h2{
+        padding-top: 2rem;
+    }
+
+    .primary-content::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Secondary Content */
+    .visit {
+        background-attachment: fixed;
+        color: rgb(255, 255, 255);
+        
+        padding:200px 0;
+    }
+    .visit p {
+        font-size: 1.3em;
+        padding-bottom: 3rem;
+        
+    }
+    .visit .call-out{
+        display: inline-block;
+        
+    }
+    
+    .stay{
+        width: 51%;
+        margin: 0 auto;
+        padding-bottom: 1em;
+    }
+   
+    
+}
+
+

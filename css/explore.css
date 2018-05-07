@@ -1,0 +1,238 @@
+/* Universal Selector */
+*{
+    box-sizing: border-box;
+}
+
+/* Main Selectors */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(19, 18, 18);
+    color: steelblue;
+    text-align: center;
+}
+
+img{
+    width:  85%;
+    max-width: 768px;
+ }
+ 
+ h1{
+     font-size: 250%;
+     text-transform: uppercase;
+     margin: 0;
+     padding-bottom: 0.2em;
+ }
+ 
+ h2{
+     margin-top: 0.3em;
+     margin-bottom: 0;
+     padding-bottom: 0.3rem;
+ }
+ 
+ span {
+     font-size: 1.5em;
+     font-style: italic;
+     
+ }
+
+
+/* Navigation Bar */
+.navbar{
+    background: rgb(95,95,95);   
+}
+
+.navbar a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0em 0.2em 0.1em 0.2em;
+    border-bottom: 1px solid whitesmoke;
+    
+}
+
+.navbar li{
+    list-style: none;
+    padding: 0.2em;
+}
+
+.navbar ul{
+    padding: 0.5em;
+    margin-top: 0;
+}
+
+.navbar a:hover{
+    background: steelblue;
+    border-radius: 5px;
+    border-bottom: none;
+}
+
+/* Header */
+
+.main-header{
+    padding-bottom: 1em;
+}
+
+.main-header img{
+    width: 60%;
+    border-radius: 52%;
+}
+
+
+/*Intro*/
+.intro{
+    background: rgb(95,95,95);
+    color: whitesmoke;
+    padding: 0.3em 0;
+}
+
+
+/*Primary Content*/
+.primary-content, .secondary-content p{
+    padding: 1em;
+    line-height: 1.5em;
+    margin-top: 0;
+}
+.lalbagh{
+    padding-top: 1em;
+    border-bottom: 1px dashed steelblue;
+}
+
+.manzil{
+    padding-top: 1em;
+    border-bottom: 1px dashed steelblue;
+}
+
+.minar{
+    padding-top: 1em;
+    border-bottom: 1px dashed steelblue;
+}
+
+/*Secondary Content */
+.amari{
+    padding-top: 1em;
+    border-bottom: 1px dashed steelblue;
+}
+
+.theatre{
+    padding-top: 1em;
+   
+}
+
+/*Footer */
+.main-footer{
+    background: rgb(95,95,95); 
+    padding: 1em 0;  
+    color: whitesmoke;
+}
+
+.main-footer p{
+    margin: 0;
+}
+
+
+/* Media Query */
+
+@media (min-width: 769px){
+
+    /* Main Selectors */ 
+    h1{
+        font-size: 3rem;
+        padding-top: 0em;
+    }
+
+    span{
+        font-size: 2rem;
+        font-style: italic;
+    }
+
+    /*Navigation Bar */
+    .navbar{
+        font-size: 1.1em;
+    }
+    .navbar ul{
+        display: flex;
+    }
+
+    .navbar li{
+        padding: 0.5em;
+    }
+
+    /* Main Header */
+    .main-header{
+        padding-top: 1.5em;
+    }
+
+    .main-header img{
+        width: 25%;
+        
+    }
+
+    /* Introduction */
+    .intro{
+        font-size: 1.6em;
+        line-height:1.5em;
+        padding: 3em 0;
+    }
+
+    /*Primary Content */
+
+    .primary-content{
+        display: flex;  
+        flex-wrap: wrap;
+    }
+
+    .col{
+        flex: 1 50%;
+        
+    }
+
+   
+
+    .lalbagh, .manzil{
+        border-bottom: none;
+    }
+
+    /* Secondary Content */ 
+
+    .secondary-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .amari{
+        border-bottom: none;
+    }
+
+    .row{
+        flex: 1;
+    }
+
+}
+
+@media (min-width: 1025px){
+   
+   
+   /* Primary Content */ 
+
+    .primary-content{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .col{
+        flex: 1;
+    }
+
+    .minar{
+        border-bottom: none;
+        
+    }
+    .manzil{
+        order: 1;
+    }
+
+
+    
+}

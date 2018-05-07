@@ -1,0 +1,243 @@
+/* Universal Selector */
+*{
+    box-sizing: border-box;
+}
+
+/* Main Selectors */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background: rgb(19, 18, 18);
+    color: steelblue;
+}
+
+.callout{
+    border: 2px solid white;
+    padding: 0.25em 0.3em 0.45em 0.3em;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.callout:hover{
+    background:steelblue;
+    color: whitesmoke;
+}
+
+h1{
+   line-height: 1.1em;
+   color: whitesmoke;
+}
+
+h2{
+    color: whitesmoke;
+    
+}
+
+span{
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: steelblue;
+}
+
+img{
+    width: 100%;
+    padding:0 .5em;
+    
+}
+
+
+
+
+
+/* Navigation Bar */
+
+.navbar{
+    background: rgb(95, 95, 95);
+    text-align: center;
+    padding: 1em 0;
+    
+    
+    
+}
+
+.navbar ul{
+    line-height: 1.3em;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    
+    
+}
+
+.navbar li{
+    padding: 0.3em;
+    
+}
+
+.navbar a{
+    
+    text-decoration: none;
+    color: white;
+    display: inline;
+    
+    
+}
+
+.navbar a:hover{
+    color: steelblue;
+    border-bottom: 2px solid steelblue;
+}
+
+/* Main Header */
+.main-header{
+    padding: 3em;
+    background: rgb(31, 29, 29);
+}
+
+.main-header img{
+    border-radius: 50%;
+    width: 80%;
+}
+
+/* Primary Content */
+
+.primary-content{
+    margin-top: 2em;
+    
+}
+
+
+.grid{
+    border-bottom: 1px dashed steelblue;
+    padding: 0 3em 1.8em 3em;
+    margin-bottom: 1em;
+}
+
+
+
+
+/* Footer */
+
+.main-footer{
+     padding-bottom: 1em;
+}
+
+/* Media Queries */
+@media(min-width:768px){
+
+    /*Main Styles */
+
+    
+
+    h1{
+        font-size: 3rem;
+        padding-top: 2em;
+    }
+
+    span{
+        font-size: 2rem;
+        font-style: italic;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    img{
+        width: 30%;
+    }
+
+
+    /* Navigation Bar */
+    .navbar ul{
+        padding-left: 1em;
+    }
+    .navbar{
+        font-size: 1.1rem;
+        margin: 0;
+        padding-bottom: 2em;
+    }
+
+    .navbar li{
+        float: left;
+     }
+ 
+     .navbar a{
+         margin-right: 2em;
+         background: none;
+         
+     }
+
+     /* Header */
+     .main-header{
+         min-height: 500px;
+        padding-top: 2em;
+        margin-bottom: 2em;
+     }
+
+     h1{
+         padding-top: 0;
+     }
+
+     .main-header img{
+         width: 20%;
+         max-width: 1080px;
+     }
+
+     /* Primary COntent */
+
+  
+
+    .grid{
+       border-bottom: none;
+    }
+
+    .container{
+        margin: 0 auto;
+        width: 95%;
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 20px;
+       
+    }
+
+    .container img{
+        width: 70%;
+    }
+
+    .card{
+        border: 1px solid #333;
+       
+    }
+
+    .callout{
+        margin-top: 1em;
+    }
+    
+     
+     
+    
+
+     .callout{
+         display: inline-block;
+         margin-bottom: 2rem;
+         
+     }
+
+    
+
+     /*Footer */
+     .main-footer{
+         border-top: 2px dashed tomato;
+     }
+
+
+
+
+}
+
+
